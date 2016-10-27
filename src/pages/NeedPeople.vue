@@ -61,7 +61,7 @@
 		</div>
 		<div class="title">
 			<div class="img1">
-				<img src="../assets/t_r.png" />
+				<img src="../assets/t_r (1).png" />
 			</div>
 			<h1>招贤纳士</h1>
 			<div class="img2">

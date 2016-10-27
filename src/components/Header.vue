@@ -8,7 +8,7 @@
 	box-shadow 0 1px 2px 1px rgba(200,200,200,0.8)
 	position fixed
 	top 0
-	z-index 1
+	z-index 100
 	.logo
 		margin 12px
 	.Nav
