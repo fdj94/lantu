@@ -317,7 +317,6 @@
 			callback();
 		}, 2000);
 	};
-
 	export default {
 		data(){
 			return{
@@ -375,11 +374,11 @@
 			goOne(){
 				var i = 0,
 					a = document.body.scrollTop,
-					_this = document.body.scrollTop;;
+					_this = document.body.scrollTop;
 				var timer = setInterval(function(){
 					if(a < 1160){
 						i = i + 10;
-						document.body.scrollTop = i + _this;
+						scrollTo(0, i + _this);
 						a = document.body.scrollTop;
 					}else{
 						clearInterval(timer);
@@ -420,7 +419,6 @@
 				timer(() => {
 				let currentIndex = this.currentIndex;
 				this.currentIndex = currentIndex > 7 ? 0 : currentIndex + 1;
-				console.log(currentIndex);
 				this.index1 = currentIndex;
 			});
 			},
@@ -429,8 +427,11 @@
 			timer(() => {
 				let currentIndex = this.currentIndex;
 				this.currentIndex = currentIndex > 7 ? 0 : currentIndex + 1;
-				console.log(currentIndex);
 			});
+			const aaa = document.querySelectorAll(".mobile:nth-of-type(odd)");
+	aaa.forEach(item => {
+		item.style.transform = "translateY(-500px)"
+	});
 		}
 	};
 </script>
